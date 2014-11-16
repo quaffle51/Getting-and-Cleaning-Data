@@ -86,7 +86,7 @@ y_train_test            <- rbind_list(y_train,y_test)
 subject_train_test      <- rbind_list(subject_train,subject_test)
 df1                     <- tbl_df(cbind(subject_train_test, y_train_test, x_train_test))
 ```
-Thus, the above completes the first task.  The following code implements the second task as outlined in the code comments.
+Thus, the above completes the first task.  The following code implements the second task as outlined in the code comments. It will be noted here that I have chosen to select only columns which conatin "mean()" and "std()".
 ```
 ##      2. Extracts only the measurements on the mean and standard deviation 
 ##         for each measurement. 
