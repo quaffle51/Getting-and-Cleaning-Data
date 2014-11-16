@@ -34,6 +34,13 @@ Source: local data frame [8 x 3]
 <table>
     <tr>
         <td>Foo</td>
+		<td>Bar</td>
+		<td>Too</td>
+    </tr>
+	<tr>
+        <td>Foo1</td>
+		<td>Bar2</td>
+		<td>Too2</td>
     </tr>
 </table>
 
