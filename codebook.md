@@ -1,7 +1,7 @@
 CodeBook: Getting and Cleaning Data Course Project 
 ==================================================
 Outlined here are the steps necessary to clean and tidy the set of [data files:](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-The R script run_analysis.R performs the necessary steps to combine the training and test data and to extract a tidy data for submission to Coursera.
+The R script **run_analysis.R** performs the necessary steps to combine the training and test data and to extract a tidy data set ready for submission to Coursera.
 
 The following R package is required:
 ```
