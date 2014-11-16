@@ -80,7 +80,6 @@ Source: local data frame [8 x 3]
 
 The following R code then combines the test and training data.
 ```
-col_headings            <- t(as.character(features$V2))
 x_train_test            <- rbind_list(X_train,X_test)
 y_train_test            <- rbind_list(y_train,y_test)
 subject_train_test      <- rbind_list(subject_train,subject_test)
