@@ -3,6 +3,6 @@
 
 Repository for storing files for the Coursera course Getting and Cleaning Data
 
-#The script file.
+### The script file.
 
 
