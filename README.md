@@ -21,7 +21,7 @@ Reading tables ...
 Source: local data frame [8 x 3]
 
 | |        filename| num_rows| num_cols|
-|-|----------------|:-------:|---------|
+|-|:--------------:|:-------:|:-------:|
 |1|         X_train|     7352|      561|
 |2|   subject_train|     7352|        1|
 |3|         y_train|     7352|        1|
