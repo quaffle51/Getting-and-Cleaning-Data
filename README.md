@@ -12,7 +12,7 @@ In order for this R script to work properly, the following files should reside i
 7. test/X_test.txt
 8. test/y_test.txt
 
-These files can be obtained from  [an example](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "Title") inline link.
+These files can be obtained from [the Coursera web site](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ).
 
 The script then reads these comma delimited files into memory. After successfully doing this the script gives a summary of the files read in, which is similar to the following.
 
