@@ -83,3 +83,11 @@ After the data files have been read a summary of the data is printed to the cons
 		<td>2</td>
     </tr>
 </table>
+
+The test and data files are combined and stored in the following variables
+```
+x_train_test
+y_train_test 
+subject_train_test 
+```
+before being combined into a single data frame `df1`.
