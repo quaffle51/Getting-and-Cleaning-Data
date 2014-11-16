@@ -84,10 +84,13 @@ After the data files have been read a summary of the data is printed to the cons
     </tr>
 </table>
 
-The test and data files are combined and stored in the following variables
+The test and data files are combined and stored in the following variables.
 ```
 x_train_test
 y_train_test 
 subject_train_test 
 ```
-before being combined into a single data frame `df1`.
+These are then combined into a single data frame: `df1`.
+
+The variable `regEx` stores a regular expression used with grep to extract columns from `df1` that contain "mean()" and "std()" in the column names. `requiredCols` contains the names of the columns matching the regular expression which are extracted into the data frame
+`df2`.
