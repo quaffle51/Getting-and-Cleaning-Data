@@ -31,4 +31,10 @@ Source: local data frame [8 x 3]
 |7|        features|      561|        2|
 |8| activity_labels|        6|        2| 
 
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
 
