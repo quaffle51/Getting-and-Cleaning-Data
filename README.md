@@ -12,6 +12,8 @@ In order for this R script to work properly, the following files should reside i
 7. test/X_test.txt
 8. test/y_test.txt
 
+These files can be obtained from  [an example](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "Title") inline link.
+
 The script then reads these comma delimited files into memory. After successfully doing this the script gives a summary of the files read in, which is similar to the following.
 
 Reading tables ... 
@@ -22,9 +24,9 @@ Source: local data frame [8 x 3]
 <table align="right">
     <tr>
         <td></td>
-		<td>filename</td>
-		<td>num_rows</td>
-		<td>num_cols</td>
+		<th>filename</th>
+		<th>num_rows</th>
+		<th>num_cols</th>
     </tr>
 	<tr>
        <td>1</td>
