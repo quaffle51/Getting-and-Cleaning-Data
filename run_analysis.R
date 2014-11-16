@@ -106,7 +106,6 @@ sum_tbl <- arrange(sum_tbl, desc(num_rows), desc(num_cols))
 cat("... summary of tables read:","\n\n")
 print(sum_tbl)
 
-col_headings            <- t(as.character(features$V2))
 x_train_test            <- rbind_list(X_train,X_test)
 y_train_test            <- rbind_list(y_train,y_test)
 subject_train_test      <- rbind_list(subject_train,subject_test)

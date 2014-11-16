@@ -78,7 +78,7 @@ Source: local data frame [8 x 3]
     </tr>
 </table>
 
-The following R code then combines the test and training data and stores the column headings from the second column of the features file:
+The following R code then combines the test and training data.
 ```
 col_headings            <- t(as.character(features$V2))
 x_train_test            <- rbind_list(X_train,X_test)
@@ -97,7 +97,7 @@ requiredCols <- c(1,2, grep(regEx, features$V2)+2)
 df2 <- df1[,requiredCols]
 rm("df1")
 ```
-Appropriate labels are now added to the data set in step 4.
+Appropriate labels are now added to the data set in step 4. The minus signs in the column names were replace for the underscore character to eliminate any problems associated that might arise in arithmetic.
 ```
 ##      4. Appropriately labels the data set with descriptive variable names. 
 names(activity_labels) <- c("Activity_ID", "Activity")
