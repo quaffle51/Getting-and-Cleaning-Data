@@ -26,7 +26,7 @@ X_test
 y_test
 ``` 
 After the data files have been read a summary of the data is printed to the console summarising the number of rows and colums associated with each of the files read in.
-```
+
 <table align="right">
     <tr>
         <td></td>
@@ -83,4 +83,3 @@ After the data files have been read a summary of the data is printed to the cons
 		<td>2</td>
     </tr>
 </table>
-```
