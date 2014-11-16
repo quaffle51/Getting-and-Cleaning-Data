@@ -101,6 +101,6 @@ The variable `regEx` stores a regular expression used with `grep` to extract col
 
 Finally, the data frame `df5` is written to disk with filename `file_for_submission.txt`.
 
-
+© Quaffle51 2014 All Rights reserved.
 
 

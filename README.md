@@ -120,4 +120,4 @@ write.table(df5,file = filename, row.names = FALSE)
 cat("\"",list.files(pattern = filename), "\" written to disc.\n\n",sep="")
 cat("... Finished.")
 ``
-© 2014 All Rights reserved.
+© Quaffle51 2014 All Rights reserved.
