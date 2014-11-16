@@ -23,44 +23,44 @@ activity_labels <- tbl_df(read.table("activity_labels.txt"))
 
 ## 'features.txt': List of all features
 filename <- "features.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 features <- tbl_df(read.table(filename,header = FALSE, colClasses = classes, comment.char = "", nrows = 561))
 
 ## 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
 filename <- "train/subject_train.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 subject_train <- tbl_df(read.table(filename,header = FALSE, colClasses = classes, comment.char = "", nrows = 7352))
 
 ## 'train/X_train.txt': Training set.
 filename <- "train/X_train.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 X_train <- tbl_df(read.table(filename,header = FALSE, colClasses = classes, comment.char = "", nrows = 7352))
 
 ## 'train/y_train.txt': Training labels.
 filename <- "train/y_train.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 y_train <- tbl_df(read.table(filename,header = FALSE, colClasses = classes, comment.char = "", nrows = 7352))
 
 ## 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
 filename <- "test/subject_test.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 subject_test <- tbl_df(read.table(filename,header = FALSE, colClasses = classes, comment.char = "", nrows = 2947))
 
 ## 'test/X_test.txt': Test set.
 filename <- "test/X_test.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 X_test <- tbl_df(read.table(filename, header = FALSE, colClasses = classes, comment.char = "", nrows = 2947))
 
 ## 'test/y_test.txt': Training labels.
 filename <- "test/y_test.txt"
-tab5rows <- read.table(filename, header = FALSE, nrows = 5)
-classes <- sapply(tab5rows, class)
+top5rows <- read.table(filename, header = FALSE, nrows = 5)
+classes <- sapply(top5rows, class)
 y_test <- tbl_df(read.table(filename, header = FALSE, colClasses = classes, comment.char = "", nrows = 2947))
 
 ###############################################################

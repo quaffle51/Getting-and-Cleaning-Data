@@ -7,11 +7,11 @@ The following R package is required:
 ```
 dplyr
 ```
-The following scratch pad variables are created to try to speed up the reading of files from disk.
+The following scratch pad variables are created to try to speed-up the reading of files from disk.
 
 ```
 filename # to hold the name of the data file to be read into memory
-tab5rows # stores the top five rows of the data file
+top5rows # stores the top five rows of the data file
 classes  # stores the classes as determined from the top5rows variables.
 ```
 
@@ -92,5 +92,13 @@ subject_train_test
 ```
 These are then combined into a single data frame: `df1`.
 
-The variable `regEx` stores a regular expression used with grep to extract columns from `df1` that contain "mean()" and "std()" in the column names. `requiredCols` contains the names of the columns matching the regular expression which are extracted into the data frame
-`df2`.
+The variable `regEx` stores a regular expression used with `grep` to extract columns from `df1` that contain "mean()" and "std()" in the column names. `requiredCols` contains the names of the columns matching the regular expression which are extracted into the data frame
+`df2`.  The data frame `df3` is based on `df2`, but has an extra column created by merging `df2` with `activity_labels` to give descriptive names to the activities.  From `df3` the data frame `df4` is created by extracting columns 2, 69, and 3 to 68 from `df3`.
+
+`by_activity` is a data frame created from `df4` which is grouped by `Activity`.
+
+`df5` is a data frame created from `by_activity` that gives the grouped means for each column in `by_activity` which are grouped by `Activity`.
+
+
+
+
