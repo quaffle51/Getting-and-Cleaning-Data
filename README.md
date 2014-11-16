@@ -33,14 +33,58 @@ Source: local data frame [8 x 3]
 
 <table>
     <tr>
-        <td>Foo</td>
-		<td>Bar</td>
-		<td>Too</td>
+        <td></td>
+		<td>filename</td>
+		<td>num_rows</td>
+		<td>num_cols</td>
     </tr>
 	<tr>
-        <td>Foo1</td>
-		<td>Bar2</td>
-		<td>Too2</td>
+       <td>1</td>
+		<td>X_train</td>
+		<td>7352</td>
+		<td>561</td>
+    </tr>
+	<tr>
+       <td>2</td>
+		<td>subject_train</td>
+		<td>7352</td>
+		<td>1</td>
+    </tr>
+	<tr>
+       <td>3</td>
+		<td>y_train</td>
+		<td>7352</td>
+		<td>1</td>
+    </tr>
+	<tr>
+       <td>4</td>
+		<td>x_test</td>
+		<td>2947</td>
+		<td>561</td>
+    </tr>
+	<tr>
+       <td>5</td>
+		<td> subject_test</td>
+		<td>2947</td>
+		<td>1</td>
+    </tr>
+	<tr>
+       <td>6</td>
+		<td>y_test</td>
+		<td>2947</td>
+		<td>1</td>
+    </tr>
+	<tr>
+       <td>7</td>
+		<td>features</td>
+		<td>561</td>
+		<td>2</td>
+    </tr>
+	<tr>
+       <td>8</td>
+		<td>activity_labels</td>
+		<td>6</td>
+		<td>2</td>
     </tr>
 </table>
 
