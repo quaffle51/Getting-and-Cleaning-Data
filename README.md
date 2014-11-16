@@ -20,14 +20,14 @@ Reading tables ...
 
 Source: local data frame [8 x 3]
 
-         filename num_rows num_cols
-1         X_train     7352      561
-2   subject_train     7352        1
-3         y_train     7352        1
-4          x_test     2947      561
-5    subject_test     2947        1
-6          y_test     2947        1
-7        features      561        2
-8 activity_labels        6        2 
+| |        filename| num_rows| num_cols|
+|1|         X_train|     7352|      561|
+|2|   subject_train|     7352|        1|
+|3|         y_train|     7352|        1|
+|4|          x_test|     2947|      561|
+|5|    subject_test|     2947|        1|
+|6|          y_test|     2947|        1|
+|7|        features|      561|        2|
+|8| activity_labels|        6|        2| 
 
 
