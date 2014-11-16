@@ -97,7 +97,7 @@ requiredCols <- c(1,2, grep(regEx, features$V2)+2)
 df2 <- df1[,requiredCols]
 rm("df1")
 ```
-Appropriate labels are now added to the data set in step 4. The minus signs in the column names were replace for the underscore character to eliminate any problems associated that might arise in arithmetic.
+Appropriate labels are now added to the data set in step 4. The minus signs in the column names were replace for the underscore character to circumvent any problems that might arise in arithmetic operations.
 ```
 ##      4. Appropriately labels the data set with descriptive variable names. 
 names(activity_labels) <- c("Activity_ID", "Activity")
@@ -108,4 +108,17 @@ names(df4) <- gsub("-","_",names(df4))      # remove minus sign from column head
 names(df4) <- gsub("\\(\\)","",names(df4))  # remove parentheses  from column headings
 ```
 
+The fifth and final step was to write out the tidy data file for submission to the Coursera web site.
+```
+##      5. From the data set in step 4, creates a second, independent tidy data 
+##         set with the average of each variable for each activity and each subject.
+by_activity <- group_by(df4, Activity, Subject)
+df5 <- summarise_each(by_activity, funs(mean))
+
+cat("\nWriting table for submission: ...","\n\n")
+filename <- "file_for_submission.txt"
+write.table(df5,file = filename, row.names = FALSE)
+cat("\"",list.files(pattern = filename), "\" written to disc.\n\n",sep="")
+cat("... Finished.")
+``
 
