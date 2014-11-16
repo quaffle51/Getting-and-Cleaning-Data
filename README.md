@@ -1,8 +1,8 @@
 # Getting and Cleaning Data
-=========================
 Repository for storing files for the Coursera course Getting and Cleaning Data
-### The R script file
+### The R script file: run_analysis.R
 In order for this R script to work properly, the following files should reside in the same directory as the script file or in the sub-directories 'train' or 'test'.
+
 1. activity_labels.txt
 2. features.txt
 3. train/subject_train.txt
