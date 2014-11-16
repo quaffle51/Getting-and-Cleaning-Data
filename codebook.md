@@ -15,7 +15,7 @@ top5rows # stores the top five rows of the data file
 classes  # stores the classes as determined from the top5rows variables.
 ```
 
-The data read into memory from file are stored in the following variables, which correspond to the names of the files store on disk.
+The data read into memory from file are stored in the following variables, which correspond to the names of the files stored on disk.
 ```
 features
 subject_train
