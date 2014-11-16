@@ -78,7 +78,7 @@ Source: local data frame [8 x 3]
     </tr>
 </table>
 
-The following R code then combines the test and training data and stores the column headings from the features file:
+The following R code then combines the test and training data and stores the column headings from the second column of the features file:
 ```
 col_headings            <- t(as.character(features$V2))
 x_train_test            <- rbind_list(X_train,X_test)
@@ -86,4 +86,13 @@ y_train_test            <- rbind_list(y_train,y_test)
 subject_train_test      <- rbind_list(subject_train,subject_test)
 df1                     <- tbl_df(cbind(subject_train_test, y_train_test, x_train_test))
 ```
+Thus, the above completes the first task.  The following code implements the second task as outlined in the code comments.
+```
+##      2. Extracts only the measurements on the mean and standard deviation 
+##         for each measurement. 
+regEx <- "mean\\(\\)|std\\(\\)"
 
+requiredCols <- c(1,2, grep(regEx, features$V2)+2)
+df2 <- df1[,requiredCols]
+rm("df1")
+```
