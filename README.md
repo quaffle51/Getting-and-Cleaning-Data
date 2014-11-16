@@ -86,7 +86,8 @@ y_train_test            <- rbind_list(y_train,y_test)
 subject_train_test      <- rbind_list(subject_train,subject_test)
 df1                     <- tbl_df(cbind(subject_train_test, y_train_test, x_train_test))
 ```
-Thus, the above completes the first task.  The following code implements the second task as outlined in the code comments. It will be noted here that I have chosen to select only columns which conatin "mean()" and "std()".
+Thus, the above completes the first task.  The following code implements the second task as outlined in the code comments. It will be noted here that I have chosen to select only columns which conatin "mean()" and "std()". After this stage we no longer
+need the "df1" table so it is removed.
 ```
 ##      2. Extracts only the measurements on the mean and standard deviation 
 ##         for each measurement. 
@@ -96,3 +97,15 @@ requiredCols <- c(1,2, grep(regEx, features$V2)+2)
 df2 <- df1[,requiredCols]
 rm("df1")
 ```
+Appropriate labels are now added to the data set in step 4.
+```
+##      4. Appropriately labels the data set with descriptive variable names. 
+names(activity_labels) <- c("Activity_ID", "Activity")
+df3 <- tbl_df(merge(x=df2,y=activity_labels, by.x="Activity_ID", by.y="Activity_ID",sort=FALSE))
+rm("df2")
+df4 <- select(df3,c(2,69,3:68))
+names(df4) <- gsub("-","_",names(df4))      # remove minus sign from column headings
+names(df4) <- gsub("\\(\\)","",names(df4))  # remove parentheses  from column headings
+```
+
+
