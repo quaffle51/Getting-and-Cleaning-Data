@@ -99,6 +99,8 @@ The variable `regEx` stores a regular expression used with `grep` to extract col
 
 `df5` is a data frame created from `by_activity` that gives the grouped means for each column in `by_activity` which are grouped by `Activity`.
 
+Finally, the data frame `df5` is written to disk with filename `file_for_submission.txt`.
+
 
 
 
