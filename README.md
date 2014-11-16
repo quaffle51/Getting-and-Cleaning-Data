@@ -78,4 +78,12 @@ Source: local data frame [8 x 3]
     </tr>
 </table>
 
+The following R code then combines the training data:
+
+```
+x_train_test            <- rbind_list(X_train,X_test)
+y_train_test            <- rbind_list(y_train,y_test)
+subject_train_test      <- rbind_list(subject_train,subject_test)
+df1                     <- tbl_df(cbind(subject_train_test, y_train_test, x_train_test))
+```
 
